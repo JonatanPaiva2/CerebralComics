@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+     font: 14px "Trebuchet MS", "Arial", sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #000;
+}
+
+#container {
+    /*border: 1px solid red;*/
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#topo {
+    width: 100%;
+    height: 150px;
+}
+
+.logo {
+    width: 200px;
+    margin: 10px auto;
+}
+
+#topo .logo a img{
+    width: 200px;
+}
+
+/* ESQUERDA */
+
+#area-esquerda {
+    /*margin-left: 12px;*/
+    position: relative;
+    float: left;
+    background: #6ada70;
+    width: 49%;
+    height: 490px;
+}
+
+#area-esquerda:hover {
+    background: #218d27;
+}
+
+#area-esquerda a img {
+    width: 100%;
+    opacity: 40%;
+}
+
+#area-esquerda #logo1 {
+    position: absolute;
+    top: 220px;
+    text-align: center;
+}
+
+#area-esquerda #logo1 img {
+    width: 50%;
+}
+
+#capitulos-codinome {
+    width: 200px;
+    position: absolute;
+    top: 60%;
+    left: 29%;
+}
+
+#capitulos-codinome ul {
+    list-style: none;
+}
+
+#capitulos-codinome ul li {
+    float: left;
+}
+
+#capitulos-codinome ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+    border-radius: 3px;
+    padding: 5px 7px;
+    margin: 5px;
+}
+
+#capitulos-codinome ul li a:hover {
+    /*opacity: 70%;*/
+    color: #000;
+    text-decoration: none;
+    background: rgb(255, 255, 255, 0.7);
+}
+
+/* DIREITA */
+
+#area-direita {
+   /* margin-right: 12px;*/
+    position: relative;
+    float: right;
+    background: #da6a6a;
+    width: 49%;
+    height: 490px;
+}
+
+#area-direita:hover {
+    background: #913d3d;
+}
+
+#area-direita a img {
+    width: 100%;
+    opacity: 40%;
+}
+
+#area-direita #logo2 img {
+    position: absolute;
+    width: 50%;
+    top: 220px;
+    left: 110px;
+}
+
+/*AZUL*/
+
+#azul {
+    /*margin: 15px 12px;*/
+    margin: 15px 0px;
+    float: left;
+    height: 300px;
+   /*width: 975px;*/
+   width: 1000px;
+    background: #3d93cc;
+}
+
+#quem-somos {
+    width: 50%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+/* RODAPÉ */
+
+#rodape {
+    padding-top: 50px;
+    clear: both;
+    height: 250px;
+    background: #1d1d1d;
+}
+
+/*
+.img img {
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+*/
+
+.img img {
+    margin-top: -250px;
+    float: right;
+    right: 0;
+    width: 1000px;
+}
+
+#rodape ul li {
+    color: #fff;
+    padding: 5px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+/* AREA PAGINA */
+
+#area-pagina {
+    width: 100%;
+    background-color: #000;
+    margin: 1px solid red;
+}
+
+#area-pagina ul {
+    list-style: none;
+}
+
+#area-pagina ul li {
+    display: block;
+    float: left;
+    background-color: #000;
+}
+
+#area-pagina ul li img{
+    width: 100%;
+}
+
+/* MENU FINAL */
+
+#menu-final {
+    background: #000;
+    text-align: center;
+    float: left;
+    height: 50px;
+    width: 1000px;
+    margin-bottom: 15px;
+}
+
+#menu-final a {
+    color: #fff;
+    text-decoration: none;
+    margin: 50px;
+}
+
+#menu-final a:hover {
+    font-weight: bold;
+}
+
+#anterior {
+    float: left;
+}
+
+#proximo {
+    float: right;
+}
