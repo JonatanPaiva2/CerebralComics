@@ -7,6 +7,7 @@
     <title>Cerebral Comics</title>
 
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="javascript.js"></script>
 
 </head>
 <body>
@@ -20,10 +21,11 @@
             </div>
         </div>
 
-        <div id="area-esquerda">
-            <a href="">
-                <img src="imagens/codinome_poster.png" alt="">
-            </a>
+        <div id="area-esquerda" onmouseover="animacaoAreaEsq()" onmouseout="areaNormal()">
+            <div id="area-esquerda-img">
+                <a href="">
+                </a>
+            </div>
             <div id="logo1">
                 <img src="imagens/Logo_codinome_black.png" alt="">
             </div>
@@ -78,28 +80,26 @@
             </div>
         </div>
 
-        <div id="area-direita">
-            <a href="">
-                <img src="imagens/Mate-me_poster.png" alt="">
-            </a>
+        <div id="area-direita" onmouseover="animacaoAreaDir()" onmouseout="areaNormal()">
+            <div id="area-direita-img">
+            </div>
             <div id="logo2">
                 <img src="imagens/Logo_codinome_white.png" alt="">
             </div>
         </div>
 
-        <div id="azul">
+        <div id="azul" onmouseover="animacaoAzul()" onmouseout="areaNormal()">
             <div id="quem-somos">
-                <h2>Quem somos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut libero sit amet tortor hendrerit consectetur. Phasellus urna nunc, hendrerit et tellus in, scelerisque placerat lacus. In nec dui dolor. Etiam vel fermentum odio. Donec accumsan, tellus in pharetra finibus, mi felis varius sem, ut mollis felis velit ac nibh. Aliquam erat volutpat. Pellentesque nibh metus, iaculis vel egestas eu, porttitor non justo.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut libero sit amet tortor hendrerit consectetur. </p>
+                <h2>QUEM SOMOS</h2>
+                <p id="texto-quem-somos">Olá, forasteiro(a). Gostaria de agradecer sua disposição para procrastinar, e reconhecer sua excelente habilidade de não fazer o que deveria estar fazendo agora. Bem-vindo ao Cerebral Comics, um humilde websítio aonde a zoeira e a estupidez andam de mãos dadas, como deve ser (amém). Onde a imaginação ganha asas que nunca deveria ter ganho, e você pode relaxar do trabalho que deveria estar fazendo neste exato minuto, mas vai fazer depois, e atrasar até serem 23:45 da noite, da véspera do dia de entregar, e você nem bem começou, como deve ser (amém). Somos uma plataforma dedicada a webcomics (quadrinhos digitais, para aqueles que não tem o Google na outra aba) originais, dando o proverbial pontapé inicial com CODINOME: FAROFEIRO, uma história tão boa quanto você espera com um nome desses. Aqui nós procuramos entreter sem discriminar. Qualquer um é categoricamente passível de zoação. Então puxe uma cadeira, pipoque aquele Dolly gelado que você escondeu do resto de sua família, abra uma segunda janela com a página da Wikipédia sobre o que você deveria estar fazendo agora, e relaxe. Você está em casa agora.</p>
             </div>
         </div>
 
         <div id="rodape">
             <ul>
                 <li>Email: cerebralcomics@gmail.com</li>
-                <li>Instagram: jonatan</li>
-                <li>Instagram: fetucho</li>
+                <li>Instagram: @jonatanpaiva_art</li>
+                <li>Instagram: @fetucho_the_original</li>
             </ul>
         </div>
     </div>

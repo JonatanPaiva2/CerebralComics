@@ -41,6 +41,23 @@ body {
     background: #6ada70;
     width: 49%;
     height: 490px;
+
+    transition: all 0.4s ease-in-out;
+}
+
+#area-esquerda-img {
+    position: relative;
+    float: left;
+    background: #6ada70;
+    width: 100%;
+    height: 490px;
+
+    opacity: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-image: url(imagens/codinome_poster.png);
 }
 
 #area-esquerda:hover {
@@ -67,6 +84,9 @@ body {
     position: absolute;
     top: 60%;
     left: 29%;
+    opacity: 0%;
+
+    transition: all 0.4s ease-in-out;
 }
 
 #capitulos-codinome ul {
@@ -103,6 +123,23 @@ body {
     background: #da6a6a;
     width: 49%;
     height: 490px;
+
+    transition: all 0.4s ease-in-out;
+}
+
+#area-direita-img {
+    position: relative;
+    float: left;
+    background: #6ada70;
+    width: 100%;
+    height: 490px;
+
+    opacity: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-image: url(imagens/Mate-me_poster.png);
 }
 
 #area-direita:hover {
@@ -118,8 +155,11 @@ body {
     position: absolute;
     width: 50%;
     top: 220px;
-    left: 110px;
+    left: 25%;
+    text-align: center;
 }
+
+
 
 /*AZUL*/
 
@@ -127,16 +167,22 @@ body {
     /*margin: 15px 12px;*/
     margin: 15px 0px;
     float: left;
-    height: 300px;
-   /*width: 975px;*/
-   width: 1000px;
+    height: 100px;
+    /*width: 975px;*/
+    width: 1000px;
     background: #3d93cc;
+    transition: all 0.4s ease-in-out;
 }
 
 #quem-somos {
     width: 50%;
     text-align: center;
     margin: 40px auto;
+}
+
+#quem-somos p {
+    opacity: 0%;
+    transition: all 0.4s ease-in-out;
 }
 
 h2 {
@@ -176,6 +222,11 @@ p {
     padding: 5px;
     margin-left: 50px;
     list-style-type: none;
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
 }
 
 /* AREA PAGINA */
