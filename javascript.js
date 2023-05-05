@@ -30,3 +30,6 @@ function animacaoAzul() {
     document.getElementById("texto-quem-somos").style.opacity = '100%'
     document.getElementById("texto-quem-somos").style.transitionDelay = '0.2s'
 }
+
+
+

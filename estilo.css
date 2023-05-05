@@ -8,8 +8,18 @@ html {
 }
 
 body {
-    background: #fff;
+    background-color: #fff;
     color: #000;
+}
+
+#temaDeFundo {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 #container {
@@ -160,7 +170,6 @@ body {
 }
 
 
-
 /*AZUL*/
 
 #azul {
@@ -183,6 +192,8 @@ body {
 #quem-somos p {
     opacity: 0%;
     transition: all 0.4s ease-in-out;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 h2 {
@@ -193,13 +204,14 @@ p {
     padding-bottom: 10px;
 }
 
+
 /* RODAPÉ */
 
 #rodape {
     padding-top: 50px;
     clear: both;
     height: 250px;
-    background: #1d1d1d;
+    background: #000;
 }
 
 /*
