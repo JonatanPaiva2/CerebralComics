@@ -158,13 +158,13 @@ body {
 
 #area-direita a img {
     width: 100%;
-    opacity: 40%;
+    opacity: 100%;
 }
 
 #area-direita #logo2 img {
     position: absolute;
     width: 50%;
-    top: 220px;
+    top: 180px;
     left: 25%;
     text-align: center;
 }
@@ -272,6 +272,7 @@ p {
     height: 50px;
     width: 1000px;
     margin-bottom: 15px;
+    padding-top: 25px;
 }
 
 #menu-final a {

@@ -41,4 +41,24 @@ if (storedTheme) {
 
 setTheme();
 
-document.querySelector('#toggle-theme').addEventListener('click', toggleTheme);
+
+nomePaginaAtual = location.pathname.split('/').pop()
+numeroPaginaAtual = parseInt(nomePaginaAtual.match(/\d+/));
+
+if (numeroPaginaAtual > 1) {
+    var link = document.createElement('a');
+    link.href = 'codinome-' + (numeroPaginaAtual - 1) +'.html';
+    link.textContent = 'Anterior';
+    
+    var linkContainer = document.getElementById('menu-final');
+    linkContainer.insertBefore(link, linkContainer.children[0]);
+}
+
+if (numeroPaginaAtual != 15) {
+    var link = document.createElement('a');
+    link.href = 'codinome-' + (numeroPaginaAtual + 1) +'.html';
+    link.textContent = 'Próximo';
+    
+    var linkContainer = document.getElementById('menu-final');
+    linkContainer.appendChild(link);
+}

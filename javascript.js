@@ -31,5 +31,3 @@ function animacaoAzul() {
     document.getElementById("texto-quem-somos").style.transitionDelay = '0.2s'
 }
 
-
-
