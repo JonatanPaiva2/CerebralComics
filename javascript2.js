@@ -1,3 +1,4 @@
+//Tema de fundo
 var theme = {
     backgroundColor: '#fff',
     logoSrc: 'imagens/logo_black.png',
@@ -41,7 +42,7 @@ if (storedTheme) {
 
 setTheme();
 
-
+//Automatização do menu-final
 nomePaginaAtual = location.pathname.split('/').pop()
 numeroPaginaAtual = parseInt(nomePaginaAtual.match(/\d+/));
 
@@ -61,4 +62,24 @@ if (numeroPaginaAtual != 15) {
     
     var linkContainer = document.getElementById('menu-final');
     linkContainer.appendChild(link);
+}
+
+//automatização das páginas
+
+var i = 0;
+while (i <= 12) {
+    var ulElement = document.getElementById('ul');
+
+    var liElement = document.createElement('li');
+    var imgElement = document.createElement('img');
+    if (i < 10) {
+        imgElement.src = 'imagens/ep' + numeroPaginaAtual + '/Pag0' + (i) +'.jpg';
+    } else {
+        imgElement.src = 'imagens/ep' + numeroPaginaAtual + '/Pag' + (i) +'.jpg';
+    }
+    
+
+    liElement.appendChild(imgElement);
+    ulElement.appendChild(liElement);
+    i++
 }
