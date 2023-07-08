@@ -171,14 +171,12 @@ body {
 
 
 /*AZUL*/
-
 #azul {
-    /*margin: 15px 12px;*/
     margin: 15px 0px;
     float: left;
-    height: 100px;
     /*width: 975px;*/
-    width: 1000px;
+    width: 100%;
+    height: 100px;
     background: #3d93cc;
     transition: all 0.4s ease-in-out;
 }
@@ -223,7 +221,7 @@ p {
 */
 
 .img img {
-    margin-top: -250px;
+    margin-top: -208px;
     float: right;
     right: 0;
     width: 1000px;
@@ -270,7 +268,7 @@ p {
     text-align: center;
     float: left;
     height: 50px;
-    width: 1000px;
+    width: 100%;
     margin-bottom: 15px;
     padding-top: 25px;
 }
@@ -291,4 +289,97 @@ p {
 
 #proximo {
     float: right;
+}
+
+
+/*TAMANHO DA PÁGINA*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #container {
+        width: 480px;
+    }
+
+    #container-temaDeFundo {
+        width: 480px;
+
+    }
+    
+    #temaDeFundo {
+        position: relative;
+        float: right;
+        right: 15px;
+        top: 15px;
+    }
+
+    #azul {
+        height: 450px;
+    }
+
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+    #container {
+        width: 500px;
+    }
+
+    #azul {
+        height: 400px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px) {
+    #quem-somos {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    #quem-somos > p {
+        opacity: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .img img {
+        margin-top: -120px;
+        width: 500px;
+    }
+
+    #capitulos-codinome {
+        left: 13%;
+        opacity: 100%;
+        font-size: 10px;
+    }
+    
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #container {
+        width: 800px;
+    }
+
+    #azul {
+        height: 400px;
+    }
+
+    #quem-somos {
+        width: 80%;
+    }
+
+    #quem-somos > p {
+        opacity: 100%;
+    }
+
+    .img img {
+        margin-top: -220px;
+        width: 950px;
+    }
+
+    #capitulos-codinome {
+        left: 28%;
+        opacity: 100%;
+        font-size: 10px;
+    }
 }

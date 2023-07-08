@@ -55,7 +55,7 @@ if (numeroPaginaAtual > 1) {
     linkContainer.insertBefore(link, linkContainer.children[0]);
 }
 
-if (numeroPaginaAtual != 15) {
+if (numeroPaginaAtual < 3) {
     var link = document.createElement('a');
     link.href = 'codinome-' + (numeroPaginaAtual + 1) +'.html';
     link.textContent = 'Próximo';
@@ -65,7 +65,6 @@ if (numeroPaginaAtual != 15) {
 }
 
 //automatização das páginas
-
 var i = 0;
 while (i <= 12) {
     var ulElement = document.getElementById('ul');

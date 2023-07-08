@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerebral Comics</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="javascript.js"></script>
 
 </head>
-<body>
-    <button id="temaDeFundo" onclick="temaDeFundo()">Modo escuro</button>
+<body onload="checkScreenSize()" onresize="checkScreenSize()">
+    <div id="container-temaDeFundo">
+        <button id="temaDeFundo" onclick="temaDeFundo()">Modo escuro</button>
+    </div>
 
     <div id="container">
         <div id="topo">
@@ -22,7 +27,7 @@
             </div>
         </div>
 
-        <div id="area-esquerda" onmouseover="animacaoAreaEsq()" onmouseout="areaNormal()">
+        <div id="area-esquerda">
             <div id="area-esquerda-img">
                 <a href="">
                 </a>
@@ -81,7 +86,7 @@
             </div>
         </div>
 
-        <div id="area-direita" onmouseover="animacaoAreaDir()" onmouseout="areaNormal()">
+        <div id="area-direita">
             <a id="area-direita-img" href="mate-me-com-carinho.html">
             </a>
             <div id="logo2">
@@ -90,7 +95,7 @@
             </div>
         </div>
 
-        <div id="azul" onmouseover="animacaoAzul()" onmouseout="areaNormal()">
+        <div id="azul">
             <div id="quem-somos">
                 <h2>QUEM SOMOS</h2>
                 <p id="texto-quem-somos">Olá, forasteiro(a). Gostaria de agradecer sua disposição para procrastinar, e reconhecer sua excelente habilidade de não fazer o que deveria estar fazendo agora. Bem-vindo ao Cerebral Comics, um humilde websítio aonde a zoeira e a estupidez andam de mãos dadas, como deve ser (amém). Onde a imaginação ganha asas que nunca deveria ter ganho, e você pode relaxar do trabalho que deveria estar fazendo neste exato minuto, mas vai fazer depois, e atrasar até serem 23:45 da noite, da véspera do dia de entregar, e você nem bem começou, como deve ser (amém). Somos uma plataforma dedicada a webcomics (quadrinhos digitais, para aqueles que não tem o Google na outra aba) originais, dando o proverbial pontapé inicial com CODINOME: FAROFEIRO, uma história tão boa quanto você espera com um nome desses. Aqui nós procuramos entreter sem discriminar. Qualquer um é categoricamente passível de zoação. Então puxe uma cadeira, pipoque aquele Dolly gelado que você escondeu do resto de sua família, abra uma segunda janela com a página da Wikipédia sobre o que você deveria estar fazendo agora, e relaxe. Você está em casa agora.</p>
